@@ -1,22 +1,19 @@
 <template>
   <div>
-    <Login/>
+    <div></div>
+    <router-view />
   </div>
   <!-- <router-link to="/about">About</router-link> -->
 </template>
 
 <script>
-import Login from './components/HelloWorld.vue' 
 export default {
-    data () {
-      return {
-        msg: 'Olá Mundo!'
-      }
-    },
-    components:{
-      Login
-    }
-  }
+  data() {
+    return {
+      msg: "Olá Mundo!",
+    };
+  },
+};
 </script>
 
 <style lang="scss">
