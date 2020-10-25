@@ -38,6 +38,11 @@ const routes = [
     path: '/member',
     name: 'Member',
     component: () => import('../views/Member.vue')
+  },
+  {
+    path: '/main',
+    name: 'Main',
+    component: () => import('../components/Main')
   }
 ]
 
