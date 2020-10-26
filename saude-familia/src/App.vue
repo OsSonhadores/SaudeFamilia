@@ -33,9 +33,9 @@ export default {
   color: #2c3e50;
 }
 
-#body{
-  background: rgb(2,0,36);
-  background: linear-gradient(213deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 23%, rgba(48,166,209,1) 100%);
+body{
+  background: rgb(2,0,36)!important;
+  background: linear-gradient(213deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 23%, rgba(48,166,209,1) 100%)!important;
 }
 
 

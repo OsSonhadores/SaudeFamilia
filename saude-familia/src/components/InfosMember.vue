@@ -16,7 +16,8 @@
               <div class="float-left col-10">
                 <p class="description">
                   {{ person.grade.description }}
-                </p>
+                </p>                
+                <b-button href="/#/infos" variant="outline-primary w-100" @click="GoGradeList">Ver mais</b-button>
               </div>
             </div>
           </b-list-group-item>
@@ -33,7 +34,7 @@
   
     <div class="row">
       <div class="col-12 col-lg-8">
-          <img :src="person.img" :alt="'{{person.name}}'" class="w-100 rounded border-success" />
+          <img :src="person.img" class="w-100 rounded border-success" />
 
         <b-form-checkbox
           id="priorityCase"
@@ -97,20 +98,24 @@ export default {
   data() {
     return {
       person: {
-        img:
-          "https://s2.glbimg.com/EU1CyKMTp2ELNzpC73Yd_-2soVo=/e.glbimg.com/og/ed/f/original/2019/10/18/faustao01.jpg",
-        name: "Feitosa",
-        wheight: "82",
-        height: "1.65",
+        img: "~/assets/p4.jpg",
+        name: "Felícia",
+        wheight: "102",
+        height: "1.70",
         priorityCase: "true",
         grade: {
           id: "G",
-          description: "Lorem ipsum",
+          description: "A obesidade mórbida é uma forma de acúmulo excessivo de gordura no corpo, caracterizada pelo IMC maior ou igual a 40 kg/m². Esta forma de obesidade é classificada como grau 3, que é mais grave, pois, a este nível, o excesso de peso coloca em risco a saúde e tende a diminuir o tempo de vida da pessoa.",
           ballCollor: "#eb1f00",
         },
       },
     };
   },
+  methods:{
+    GoGradeList(){
+      window.assign.location("/#/Infos")
+    }
+  }
 };
 </script>
 
@@ -141,7 +146,5 @@ export default {
   margin-top: 10px;
 }
 
-body {
-  background: #13660c !important;
-}
+
 </style>

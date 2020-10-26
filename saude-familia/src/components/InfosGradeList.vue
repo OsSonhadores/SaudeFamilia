@@ -95,8 +95,5 @@ export default {
     margin-top: 10px;
 }
 
-body{
-    background: #13660c!important;
-}
 
 </style>
