@@ -29,25 +29,25 @@ export default {
     pessoas:[      
       {
         name : "Algusto",
-        img: "./assets/p1.jpg",
+        img: "~/assets/p1.jpg",
         grade: "N",
         color: "#48c732"
       },
       {
         name : "Amanda",
-        img: "./assets/p2.jpg",
+        img: "~/assets/p2.jpg",
         grade: "S",
         color: "#d49708"
       },
       {
         name : "Roberta",
-        img: "./assets/p3.jpg",
+        img: "~/assets/p3.jpg",
         grade: "M",
         color:"#dbb60e"
       },
       {
         name : "Felícia",
-        img: "./assets/p4.jpg",
+        img: "~/assets/p4.jpg",
         grade: "G",
         color: "#eb1f00"
       },
