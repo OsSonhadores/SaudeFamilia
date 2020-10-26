@@ -26,7 +26,7 @@ export default {
     return {
       msg: "Olá Mundo!",
 
-    pessoas:[      
+    pessoas:[
       {
         name : "Algusto",
         img: '/img/p1.308e221e.jpg',

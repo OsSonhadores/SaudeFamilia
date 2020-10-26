@@ -98,7 +98,7 @@ export default {
   data() {
     return {
       person: {
-        img: "~/assets/p4.jpg",
+        img: "/img/p4.9ec78594.jpg",
         name: "Felícia",
         wheight: "102",
         height: "1.70",
