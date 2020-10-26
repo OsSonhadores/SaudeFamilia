@@ -17,7 +17,12 @@
                 <p class="description">
                   {{ person.grade.description }}
                 </p>                
-                <b-button href="/#/infos" variant="outline-primary w-100" @click="GoGradeList">Ver mais</b-button>
+                <b-button 
+                href="/#/infos" 
+                variant="outline-primary w-100"
+                @click="GoGradeList">Ver mais
+                
+                </b-button>
               </div>
             </div>
           </b-list-group-item>
@@ -34,7 +39,7 @@
   
     <div class="row">
       <div class="col-12 col-lg-8">
-          <img :src="person.img" class="w-100 rounded border-success" />
+          <img src="https://s2.glbimg.com/UZsYljvv_XiTaowVvxKcgQ8-OzQ=/s.glbimg.com/jo/g1/f/original/2015/02/27/gorditos-corazon.jpg" class="w-100 rounded border-success" />
 
         <b-form-checkbox
           id="priorityCase"
@@ -97,6 +102,7 @@
 export default {
   data() {
     return {
+      clicou: false,
       person: {
         img: "/img/p4.9ec78594.jpg",
         name: "Felícia",
@@ -113,7 +119,7 @@ export default {
   },
   methods:{
     GoGradeList(){
-      window.assign.location("/#/Infos")
+      window.location.assign("/#/Main")
     }
   }
 };

@@ -6,12 +6,22 @@
 
       <div v-for="p in pessoas" :key="p.id">
         <div class="card" style="width: 18rem;">
-          <img :src="p.img" class="card-img-top" alt="...">
+          <img 
+          :src="p.img" 
+          class="card-img-top" 
+          alt="..."
+          style="width:287px; height:300px;"          
+          >
           <div class="card-body">
             <h5 class="card-title">{{p.name}}</h5>
-            <b-button href="#" variant="primary" @click="GoToMember">Acompanhar</b-button>
+            <b-button href="#" 
+            variant="primary"
+            :to="'/member'"  
+            @click="GoToMember"
+            >Detalhes</b-button>
           </div>
-        </div>        
+        </div>      
+        <router-view/>  
       </div>
 
 
@@ -28,54 +38,54 @@ export default {
 
     pessoas:[
       {
-        name : "Algusto",
-        img: '/img/p1.308e221e.jpg',
+        name : "Augusto",
+        img: 'https://images.pexels.com/photos/4580470/pexels-photo-4580470.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
         grade: "N",
         color: "#48c732"
       },
       {
         name : "Amanda",
-        img: '/img/p2.8a860288.jpg',
+        img: 'https://images.pexels.com/photos/2709388/pexels-photo-2709388.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
         grade: "S",
         color: "#d49708"
       },
       {
         name : "Roberta",
-        img: "/img/p3.4cd15a9f.jpg",
+        img: "https://images.pexels.com/photos/3746210/pexels-photo-3746210.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         grade: "M",
         color:"#dbb60e"
       },
       {
         name : "Felícia",
-        img: "/img/p4.9ec78594.jpg",
+        img: "https://s2.glbimg.com/UZsYljvv_XiTaowVvxKcgQ8-OzQ=/s.glbimg.com/jo/g1/f/original/2015/02/27/gorditos-corazon.jpg",
         grade: "G",
         color: "#eb1f00"
       },
       {
         name : "Rafaela",
-        img: "/img/p5.9a63849f.jpg",
+        img: "https://images.pexels.com/photos/4226462/pexels-photo-4226462.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         grade: "N",
         color: "#48c732"
       },
       {
         name : "Thomas",
-        img: "/img/p6.a39395e9.jpg",
+        img: "https://img.freepik.com/fotos-gratis/menino-gordo-obeso-feliz-na-piscina_34435-2177.jpg?size=626&ext=jpg",
         grade: "O",
         color: "#ff6f00"
       },
 
     ]
 
-    };
-  },
-  methods:{
-    GoToMember(){
-      window.assign.location("/#/member")
     }
   },
   components: {
     Navbar
-  }
+  },  
+  methods:{
+    GoToMember(){
+      window.assign.location("/#/member");
+    }
+  },
 };
 </script>
 
