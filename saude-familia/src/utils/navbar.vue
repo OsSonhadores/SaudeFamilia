@@ -3,7 +3,9 @@
   <b-col col md="8">
   <b-navbar style="background: #002970;">
       <b-navbar-nav class="ml-auto">
-          <b-nav-item  href="#" v-if="login">Cadastro</b-nav-item>
+          <b-nav-item 
+          v-if="login"
+          >Cadastro</b-nav-item>
           <b-nav-item  href="#" v-if="!login">Login</b-nav-item>
       </b-navbar-nav>
   </b-navbar>

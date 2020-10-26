@@ -41,7 +41,7 @@
                 <b-button type="submit" class="mt-2" variant="outline-primary w-100"
                 @click="clicou"
                  :to="'/cadastro'"
-                  >Logar</b-button>                  
+                >Logar</b-button>                  
               </b-form-group>
               <a href=""
                 ><small class="float-right mt-4"
