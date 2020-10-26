@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div id="body">
     <div>
       <!-- <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/test">Test</router-link>
-      <router-view/> -->
+      <router-link to="/test">Test</router-link> -->
+      <!-- <router-view/> -->
       <Login/>
     </div>
 
@@ -32,6 +32,12 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+#body{
+  background: rgb(2,0,36);
+  background: linear-gradient(213deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 23%, rgba(48,166,209,1) 100%);
+}
+
 
 #nav {
   padding: 30px;

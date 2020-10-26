@@ -4,7 +4,7 @@
     v-if="!clicado"
     :login="false"
     />
-    <b-row class="justify-content-md-center mt-4 form" v-if="!clicado">
+    <b-row class="justify-content-md-center form" v-if="!clicado">
       <b-col col md="8">
         <b-card
           style="font-weight: bold"
@@ -86,7 +86,7 @@
               </b-form-group>
 
               <b-form-group class="text-center">
-                <b-button type="submit" class="mt-2" variant="outline-primary"
+                <b-button type="submit" class="mt-2" variant="outline-primary w-100"
                 @click="clicou"
                  :to="'/cadastro'"
                   >Cadastrar-se</b-button>                  
@@ -111,6 +111,11 @@ export default {
     },
   components: {
     Navbar,
+  },
+  methods:{
+    clicou(){
+      window.location.assign("/#/Main")
+    }
   }
 }
 </script>

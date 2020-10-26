@@ -4,8 +4,13 @@
     v-if="!clicado"
     :login="true"
     />
-    <b-row class="justify-content-md-center mt-4 form" v-if="!clicado">
-      <b-col col md="8">
+    <b-row class="justify-content-md-center form pb-5" v-if="!clicado">
+      <b-col class="bg-light" col md="8">
+
+      <p class="w-100 text-center">
+        <img src="../assets/logo.png" width="300"/>
+      </p>
+
         <b-card
           style="font-weight: bold"
           class="text-center"
@@ -27,12 +32,13 @@
                   class="text-center mt-2"
                   v-model="password"
                   placeholder="Digite sua senha"
+                  type="password"
                 >
                 </b-form-input>
               </b-form-group>
 
               <b-form-group class="text-center">
-                <b-button type="submit" class="mt-2" variant="outline-primary"
+                <b-button type="submit" class="mt-2" variant="outline-primary w-100"
                 @click="clicou"
                  :to="'/cadastro'"
                   >Logar</b-button>                  
@@ -82,4 +88,8 @@ export default {
 .card {
   border-radius: 0px !important;
 }
+.bg-dark{
+  background: #0a008b!important;
+}
+
 </style>
