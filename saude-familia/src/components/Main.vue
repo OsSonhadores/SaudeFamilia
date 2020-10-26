@@ -29,37 +29,37 @@ export default {
     pessoas:[      
       {
         name : "Algusto",
-        img: "~/assets/p1.jpg",
+        img: '/img/p1.308e221e.jpg',
         grade: "N",
         color: "#48c732"
       },
       {
         name : "Amanda",
-        img: "~/assets/p2.jpg",
+        img: '/img/p2.8a860288.jpg',
         grade: "S",
         color: "#d49708"
       },
       {
         name : "Roberta",
-        img: "~/assets/p3.jpg",
+        img: "/img/p3.4cd15a9f.jpg",
         grade: "M",
         color:"#dbb60e"
       },
       {
         name : "Felícia",
-        img: "~/assets/p4.jpg",
+        img: "/img/p4.9ec78594.jpg",
         grade: "G",
         color: "#eb1f00"
       },
       {
         name : "Rafaela",
-        img: "./assets/p5.jpg",
+        img: "/img/p5.9a63849f.jpg",
         grade: "N",
         color: "#48c732"
       },
       {
         name : "Thomas",
-        img: "./assets/p6.jpg",
+        img: "/img/p6.a39395e9.jpg",
         grade: "O",
         color: "#ff6f00"
       },
